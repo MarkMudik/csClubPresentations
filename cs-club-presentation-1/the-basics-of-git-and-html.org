@@ -7,8 +7,6 @@
 #+title:      The Basics of HTML and Git
 #+author:     Mark
 #+date:       [2025-09-15 Mon 15:26]
-#+filetags:   
-#+identifier: 20250915T152642
 #+options:    author:nil timestamp:nil toc:1 num:nil
 
 * Full Website
