@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple HTML Site</title>
+  
+  <!-- Inline CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>Click the button to see some JavaScript in action:</p>
+  
+  <button onclick="showMessage()">Click Me</button>
+
+  <!-- Inline JavaScript -->
+  <script>
+    function showMessage() {
+      alert("You clicked the button!");
+    }
+  </script>
+</body>
+</html>
