@@ -1,0 +1,148 @@
+:reveal_properties:
+#+reveal_root: https://cdn.jsdelivr.net/npm/reveal.js
+#+reveal_reveal_js_version: 4
+#+reveal_theme: serif
+:end:
+
+#+title:      The Basics of HTML and Git
+#+author:     Mark
+#+date:       [2025-09-15 Mon 15:26]
+#+options:    author:nil timestamp:nil toc:1 num:nil
+
+* Full Website
+
+#+begin_src html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple HTML Site</title>
+  
+  <!-- Inline CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>Click the button to see some JavaScript in action:</p>
+  
+  <button onclick="showMessage()">Click Me</button>
+
+  <!-- Inline JavaScript -->
+  <script>
+    function showMessage() {
+      alert("You clicked the button!");
+    }
+  </script>
+</body>
+</html>
+
+#+end_src
+
+* How website looks
+#+attr_html: :width 45% :align center
+[[./assets/index-image.png]]
+
+* Breakdown of Website
+
+** Head / Metadata
+
+#+begin_src html
+
+<!DOCTYPE html> <!-- Tells html the document type -->
+<html lang="en"> <!-- language -->
+<head> <!-- head of the program for metadata -->
+  <meta charset="UTF-8">
+  <title>Simple HTML Site</title> <!-- The name of tab -->
+
+#+end_src
+
+** CSS
+
+#+begin_src html
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+
+    <!-- color the #1 heading this color -->
+    h1 {
+      color: #333;
+    }
+
+    <!-- Style of the buttom -->
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+
+#+end_src
+
+** Javascript
+
+#+begin_src html
+
+  <!-- The actual funtion ran from pressing the button -->
+  <script>
+    function showMessage() {
+      alert("You clicked the button!");
+    }
+  </script>
+
+
+#+end_src
+
+
+* Git Commands
+
+#+begin_src shell
+
+# "Stage" all changes in the current directory
+git add .          
+
+# Save the staged changes locally, place your message to show the changes in github
+git commit -m "Message here"
+
+# "push" your commits from the local repo to the remote repo on github.com
+git push origin main  
+
+
+#+end_src
+
